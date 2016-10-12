@@ -1,0 +1,32 @@
+{
+    "parser": "babel-eslint",
+    
+    "globals": {
+        "Backbone": true,
+        "_": true,
+        "$": true
+    },
+    "extends": "eslint:recommended",
+    env: {
+        es6: true
+    },
+
+    // Overrides
+    "rules": {
+        "complexity": [1, 20],
+        "no-use-before-define": [2, "nofunc"],
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "no-console": 0,
+        "no-var": 0,
+        "padded-blocks": [0, "never"],
+        "no-trailing-spaces": 0,
+        "prefer-template": 0,
+        "no-alert": 0,
+        "no-undef": 0,
+
+        // TODO: Ideally, these shouldn't be overridden
+        "prefer-arrow-callback": 0,
+        "vars-on-top": 0,
+        "object-shorthand": 0
+    }
+}

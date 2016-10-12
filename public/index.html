@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ATX Local</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    
+    <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/homeaway-bootstrap-3/3.10.4/stylesheets/gt-trav.min.css">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/resources/css/application.css">
+</head>
+<body>
+
+<div class="header-bce">
+    <div class="container">
+      <div class="navbar header navbar-bce">
+          <div class="navbar-inner">
+              <div class="pull-left">
+                  <a class="btn-header-collapse" data-toggle="collapse" data-target=".navbar-collapse.header-bce-links">
+                      <i class="icon-hamburger-menu"></i>
+                  </a>
+                  <a href="/" title='HomeAway' class="logo">
+                      <img src="//csvcus.homeaway.com/rsrcs/cdn-logos/1.9.1/bce/moniker/homeaway_us/logo-bceheader.svg" />
+                  </a><br />
+                  <div class="pull-right app-title"><lingua:message key="title.translations.portal" /></div>
+              </div>
+              <div class="collapse header-bce-links navbar-collapse">
+                  <ul class="nav navbar-nav" role="navigation">
+
+                            <li><a href="/"><lingua:message key="page.login" /></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="header-bce-birdhouse-container birdhouse-toggle">
+          <div class="flip-container dropdown-toggle" data-toggle="dropdown">
+              <div class="flipper">
+                  <div class="front btn-bce">
+                      <img src="//csvcus.homeaway.com/rsrcs/cdn-logos/1.9.1/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
+                  </div>
+              </div>
+          </div>
+          <div class="dropdown-menu dropdown-menu-bce-about fade">
+              <div class="text-right bce-about-logo-wrapper">
+                  <img src="//csvcus.homeaway.com/rsrcs/cdn-logos/1.5.1/bce/brand/homeaway/logo-simple.svg"/>
+              </div>
+          </div>
+      </div>
+        
+    </div>
+</div>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">Globe Portal</div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-lnk" id="nav-home-lnk"><a href="/">Home</a></li>
+              <li class="nav-lnk dropdown" id="nav-create-lnk">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><lingua:message key="btn.create.tr" /><span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/ticket/create/lingua"><lingua:message key="title.translation.requests.lingua" /></a></li>
+                  <li><a href="/ticket/create"><lingua:message key="title.translation.requests" /></a></li>
+                </ul>
+              </li>
+              <li class="nav-lnk dropdown" id="nav-view-lnk">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><lingua:message key="btn.view.tr" /><span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/ticket/view/lingua"><lingua:message key="title.translation.requests.lingua" /></a></li>
+                  <li><a href="/ticket/view"><lingua:message key="title.translation.requests" /></a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="main-content"></div>
+
+<script src="/resources/js/vendor.js"></script>
+<script src="/resources/js/application.js"></script>
+
+</body>
+</html>

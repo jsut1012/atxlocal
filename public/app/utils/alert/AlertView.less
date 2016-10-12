@@ -1,0 +1,50 @@
+.alerts-view {
+
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1),  opacity 0.3s ease-in;
+	display:inline-block;
+	text-align: center;
+	min-width: 22%;
+	max-width: 50%;
+    padding: 10px 30px;
+	overflow: hidden;
+	box-shadow: 0px 10px 58px 0px rgba(0,0,0,0.4);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3);
+	font-size: 16px;
+    font-weight: 300;
+
+	&.visible {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	// type is "success"
+	&.check {
+		background-color: #0DAF29;
+		color: #FFF;
+	}
+
+	// type is "info"
+	&.info {
+		background-color: #0A8EB7;
+		color: #FFF;
+	}
+
+	// type is "error"
+	&.alert {
+		background-color: #B92F2F;
+		color: #FFF;
+	}
+
+	i {
+		color: white;
+		opacity: 0.6;
+		font-size: 17px;
+		width: 24px;
+	}
+    a {
+        color: #FFF;
+    }
+
+}

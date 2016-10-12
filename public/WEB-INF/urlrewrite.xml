@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "urlrewrite3.2.dtd">
+
+<urlrewrite>
+
+    <rule>
+        <name>Route all traffic index.jsp for single page app experience</name>
+        <condition type="request-uri" operator="notequal">^/(index.jsp|resources|cas/).*$</condition>
+        <from>^/.*$</from>
+        <to last="true">/index.jsp</to>
+    </rule>
+
+    <rule>
+        <note>CAS and HTTP files</note>
+        <from>/cas/(signout|casfailed|cas-403)$</from>
+        <to>/cas/$1.jsp?p=$1&amp;q=$1</to>
+    </rule>
+</urlrewrite>

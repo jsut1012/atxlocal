@@ -1,0 +1,92 @@
+body {
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+    .italic {
+        font-style: italic;
+    }
+    .globe-header .app-title {
+        font-family: "Roboto", Arial, sans-serif; 
+        color:#2a6ebb; 
+        font-weight: 500;
+    }
+    .form-horizontal .control-label {
+    	padding-top: 0;
+    }
+    .required-field{
+        font-size: 13px;
+    }
+    .icon-required:before {
+    	font-size: 20px;
+    }
+    #alert-host {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align:center;
+    }
+    
+    .modal-body {
+        form {
+            width: 560px;
+            max-height: 500px;
+            overflow: scroll;
+        }
+        table {
+            margin-bottom: 0px;
+        }
+        ::-webkit-scrollbar{
+            -webkit-appearance: none;
+            width: 7px;
+            height: 7px;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, .5);
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+    }
+    .modal-footer {
+        padding-top: 0px;
+    }
+    .notification {
+    	color: #ff8a00;
+    	padding: 3px 0px;
+    	font-size: 13px;
+    	i {
+    		font-size: 18px;
+    		width: 12px;
+    		height: 12px;
+    	    color: #ff8a00;
+    	    line-height: 17px;
+    	}
+    	a {
+    	    color: #ff8a00;
+    	    text-decoration: underline;
+    	}
+    }
+    .notification {
+        &.info {
+            color: #2a6ebb;
+    	    padding: 3px 0px;
+    	    font-size: 13px;
+    	    i {
+    		    font-size: 18px;
+    		    width: 12px;
+    		    height: 12px;
+    	        color: #2a6ebb;
+    	        line-height: 17px;
+    	    }
+    	    a {
+    	        color: #2a6ebb;
+    	        text-decoration: underline;
+    	    }
+        }
+    }
+    .btn-sm {
+        .icon-chevron-right {
+            line-height: 17px;
+            font-size: 12px;
+        }
+    }
+}
