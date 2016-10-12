@@ -1,2 +1,0 @@
-# atxlocal
-Personal Site
