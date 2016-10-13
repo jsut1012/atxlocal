@@ -1,17 +1,18 @@
 import gulp from 'gulp';
+import eslint from 'gulp-eslint';
 
 let task = {
     _registered: false,
 
-    register(cssFiles, imageFiles) {
+    register: function(srcs) {
         if (!this._registered) {
             // Note registration
             this._registered = true;
 
-            gulp.task('watchAssets', () => {
-                gulp.watch(cssFiles, ['buildCSS']);
-                gulp.watch(imageFiles, ['copyImages']);
-            });
+            return gulp.src([srcs])
+            .pipe(eslint())
+            .pipe(eslint.format())
+            .pipe(eslint.failAfterError());
         }
     }
 };
