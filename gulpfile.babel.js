@@ -43,7 +43,7 @@ gulp.task('watch', ['webpackWatch', 'watchAssets']);
 // Eslint for style linting
 gulp.task('lint', () => {
     return gulp.src([JS_FILES])
-    .pipe(eslint())
+        .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
